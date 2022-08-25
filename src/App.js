@@ -54,7 +54,7 @@ class App extends Component {
         return (
             <div className="App">
 
-                <h1> Welcome to your cool WEATHER app </h1>
+                <h1 className='text-3xl text-blue-800 font-extrabold p-6'> Welcome to your cool WEATHER app </h1>
 
                 <Form getWeather={this.getWeather} />
 

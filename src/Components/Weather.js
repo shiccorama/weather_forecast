@@ -1,30 +1,46 @@
 import React from "react";
+import '../App.css';
 
 
 const Weather = (props) => {
 
 	// const [city, country, temperature, humitidy, description, error] = {props};
 	return (
-		<div className="Weather">
+		<div className="Weather px-6 py-10 text-manga text-xl flex flex-col justify-center">
 			{
 				props.city && 
-				<p> City: {props.city} </p>
+				<p className="flex justify-evenly py-4 px-30 w-30">
+					<span className="">City:</span>
+					<span className="">{props.city}</span> 
+				</p>
 			}
 			{
 				props.country && 
-				<p> Country: {props.country} </p>
+				<p className="flex justify-evenly py-4 px-30 w-30">
+					<span className="">Country:</span>
+					<span className="">{props.country}</span>
+				</p>
 			}
 			{
 				props.temperature &&		
-				<p> Temperature: {props.temperature} </p>
+				<p className="flex justify-evenly py-4 px-30 w-30">
+					<span className="">Temperature:</span>
+					<span className="">{props.temperature}</span>
+				</p>
 			}
 			{
 				props.humitidy && 
-				<p> Humidity: {props.humitidy} </p>
+				<p className="flex justify-evenly py-4 px-30 w-30">
+					<span className="">Humidity:</span>
+					<span className="">{props.humitidy}</span>
+				</p>
 			}
 			{
 				props.description && 
-				<p> Description: {props.description} </p>
+				<p className="flex justify-evenly py-4 px-30 w-30">
+					<span className="">Description:</span>
+					<span className="">{props.description}</span>
+				</p>
 			}
 			
 		</div>
